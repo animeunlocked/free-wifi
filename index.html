@@ -4,6 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            width: 70vh;
+            height: 70vh;
+            animation: fadeIn 2s linear infinite;
+        }
+        @keyframes fadeIn{
+            
+            0%{transform: rotate(0deg) scale(1); border-radius:0;}
+            50%{transform: rotate(180deg) scale(1.1); border-radius: 50%;}
+            100%{transform: rotate(0deg) scale(1); border-radius:0;}            
+        }
+        @media(max-width:680px){
+            img{
+                width: 25vw;
+                height: 25vw;
+            }
+        }
+    </style>
 </head>
 <body bgcolor="#151315">
     <img src="salmon bhai.jpg" alt="">
